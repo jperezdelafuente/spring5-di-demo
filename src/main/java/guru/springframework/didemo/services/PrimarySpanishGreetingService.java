@@ -1,4 +1,4 @@
-package guru.services;
+package guru.springframework.didemo.services;
 
 import guru.springframework.didemo.repositories.GreetingRepository;
 import org.springframework.context.annotation.Primary;
