@@ -7,8 +7,11 @@ import guru.springframework.didemo.controllers.SetterInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"guru.services", "guru.springframework.didemo.repositories",
+								"guru.springframework.didemo.controllers"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
