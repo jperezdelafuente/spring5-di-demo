@@ -4,6 +4,7 @@ import guru.springframework.didemo.controllers.ConstructorInjectedController;
 import guru.springframework.didemo.controllers.MyController;
 import guru.springframework.didemo.controllers.PropertyInjectedController;
 import guru.springframework.didemo.controllers.SetterInjectedController;
+import guru.springframework.didemo.examplebeans.FakeDataSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -20,5 +21,12 @@ public class DiDemoApplication {
 		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+
+		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+
+
+		System.out.println("username: " + fakeDataSource.getUsername());
+		System.out.println("password: " + fakeDataSource.getPassword());
+		System.out.println("dbURL: " + fakeDataSource.getUrl());
 	}
 }
