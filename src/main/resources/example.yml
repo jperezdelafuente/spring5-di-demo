@@ -1,0 +1,34 @@
+
+name: John
+
+names: # Comment
+    - John
+    - Paul
+    - Ringo
+
+pound_sing: "#"
+
+book:
+    author: Joe Buck
+    publisher: ramdom house
+
+truth: yes
+
+another_true: True
+
+more_true: true
+
+false: no #No, false False
+
+string_val: "This is it´s quote"
+
+colon_string: "my coureses: one two there"
+
+include_new_lines: |
+    sdsds ddsds dsads
+    dsdsd dsd dsds
+
+ignore_new_lines: >
+    this is
+    just one long
+    string
